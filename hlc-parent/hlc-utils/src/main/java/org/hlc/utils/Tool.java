@@ -126,6 +126,7 @@ public class Tool {
 			}
 			tool_args = Arrays.copyOfRange(args, 1, args.length);
 		}
+		@SuppressWarnings("deprecation")
 		Object o = c.newInstance();
 		Class<?>[] argTypes = new Class[] { String[].class };
 		Method m_setArgs = c.getMethod("setArgs", argTypes);
